@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
-import { seedEntries, type EntryType, type VaultEntry } from "./types";
+import { type EntryType, type VaultEntry } from "./types";
 
 const STORAGE_KEY = "kura-links";
 const NEW_ENTRY_KEY = "kura-new-entry-id";
@@ -15,7 +15,7 @@ export function useVault() {
     const storedEntries = window.localStorage.getItem(STORAGE_KEY);
     const nextEntries = storedEntries
       ? (JSON.parse(storedEntries) as VaultEntry[])
-      : seedEntries;
+      : [];
     setEntries(nextEntries);
     const storedNewEntryId = window.localStorage.getItem(NEW_ENTRY_KEY);
     if (storedNewEntryId) {
