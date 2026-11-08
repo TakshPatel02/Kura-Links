@@ -1,26 +1,19 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  /* ── Kura-Links Palette ── */
+  --color-sumi:   #2E2620;   /* dark sumi brown — base bg */
+  --color-cream:  #F1E8D6;   /* cream — primary text */
+  --color-amber:  #C98A3D;   /* lantern amber — accent */
+  --color-peach:  #D9A88F;   /* blossom peach — secondary / tags */
+  --color-muted:  #8C7762;   /* borders / muted text */
+
+  /* keep geist fonts available */
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #2E2620;
+  color: #F1E8D6;
 }
