@@ -1,6 +1,11 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export default function Navbar() {
+  const pathname = usePathname();
+
   return (
     <header className="relative z-10 flex shrink-0 items-center justify-between py-5">
       <Link
@@ -15,13 +20,21 @@ export default function Navbar() {
         className="flex items-center gap-5 text-sm sm:gap-8"
       >
         <Link
-          className="text-cream underline decoration-amber underline-offset-8 transition-colors hover:text-amber"
+          className={`transition-colors hover:text-amber ${
+            pathname === "/"
+              ? "text-cream underline decoration-amber underline-offset-8"
+              : "text-cream/80"
+          }`}
           href="/"
         >
           Home
         </Link>
         <Link
-          className="text-cream/80 transition-colors hover:text-cream"
+          className={`transition-colors hover:text-cream ${
+            pathname === "/vault"
+              ? "text-cream underline decoration-amber underline-offset-8"
+              : "text-cream/80"
+          }`}
           href="/vault"
         >
           Vault
