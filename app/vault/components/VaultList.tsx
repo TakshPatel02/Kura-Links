@@ -12,7 +12,6 @@ export default function VaultList({ entries }: Props) {
     <div id="all" className="space-y-7">
       {categoryOrder.map((type) => {
         const groupEntries = entries.filter((entry) => entry.type === type);
-        if (!groupEntries.length) return null;
         return (
           <section id={type} key={type}>
             <GroupHeader

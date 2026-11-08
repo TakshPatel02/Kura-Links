@@ -64,12 +64,12 @@ export default function Vault() {
         </div>
 
         <div className="pt-8">
-          {!entries.length ? (
-            <EmptyState message="The kura is empty. Store your first link." />
-          ) : !filteredEntries.length ? (
+          {entries.length > 0 && !filteredEntries.length ? (
             <EmptyState message="Nothing found. Maybe you never saved it." />
-          ) : (
-            <VaultList entries={filteredEntries} />
+          ) : null}
+          <VaultList entries={filteredEntries} />
+          {!entries.length && (
+            <EmptyState message="The kura is empty. Store your first link." />
           )}
         </div>
       </div>
