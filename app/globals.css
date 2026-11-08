@@ -8,9 +8,10 @@
   --color-peach:  #D9A88F;   /* blossom peach — secondary / tags */
   --color-muted:  #8C7762;   /* borders / muted text */
 
-  /* keep geist fonts available */
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* ── Fonts ── */
+  --font-heading: var(--font-heading);   /* Kaisei Tokumin  → font-heading */
+  --font-body:    var(--font-body);      /* Zen Maru Gothic → font-body    */
+  --font-mono:    var(--font-mono);      /* JetBrains Mono  → font-mono    */
 }
 
 body {
