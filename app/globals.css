@@ -9,9 +9,7 @@
   --color-muted:  #8C7762;   /* borders / muted text */
 
   /* ── Fonts ── */
-  --font-heading: var(--font-heading);   /* Kaisei Tokumin  → font-heading */
-  --font-body:    var(--font-body);      /* Zen Maru Gothic → font-body    */
-  --font-mono:    var(--font-mono);      /* JetBrains Mono  → font-mono    */
+  --font-sans: var(--font-zen-kaku), ui-sans-serif, system-ui, sans-serif;
 }
 
 body {
