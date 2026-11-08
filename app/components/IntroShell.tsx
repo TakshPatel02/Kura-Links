@@ -101,7 +101,7 @@ export default function IntroShell({ children }: { children: ReactNode }) {
             animate={{ x: doorsOpen ? "-105%" : "0%" }}
             className="absolute inset-y-0 left-0 w-1/2 bg-no-repeat will-change-transform"
             style={{
-              backgroundImage: "url(/door.png)",
+              backgroundImage: "url(/door.webp)",
               backgroundPosition: "left",
               backgroundSize: "200% 100%",
             }}

@@ -4,7 +4,7 @@ import { BsArrowUpRight } from "react-icons/bs";
 export default function Home() {
   return (
     <main className="relative min-h-0 flex-1 bg-sumi">
-      <div className="fixed inset-0 z-0 bg-[url('/bg.png')] bg-cover bg-center" />
+      <div className="fixed inset-0 z-0 bg-[url('/bg.webp')] bg-cover bg-center" />
       <div className="fixed inset-0 z-0 bg-sumi/20" />
       <div className="fixed inset-0 z-0 bg-linear-to-b from-sumi/35 via-transparent to-sumi/65" />
 
